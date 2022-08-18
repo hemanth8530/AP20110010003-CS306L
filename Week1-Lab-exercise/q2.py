@@ -37,6 +37,15 @@ for i in n:
         else:
             state=-1
             break
+        
+    elif state==4:
+        if i=='a':
+            state=1
+        elif i=='b':
+            state=4
+        else:
+            state=-1
+            break
 
 if state==2 or state==4:
     print("String is Accepted !!")
